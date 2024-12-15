@@ -5,7 +5,7 @@
 **🎯 Project Objectives**
 
 
-	1.	Content Distribution:
+1.	Content Distribution:
 Evaluate the distribution of content types (Movies vs TV Shows) to identify audience consumption trends and inform content acquisition decisions.
 	2.	Audience Preferences:
 Analyze the most common ratings for Movies and TV Shows to understand audience demographics and optimize content targeting.
@@ -45,28 +45,25 @@ Dataset Link:
 
 **Schema**
 
--- Drop table if it already exists
-DROP TABLE IF EXISTS netflix;
 
--- Create table schema for Netflix Dataset
-CREATE TABLE netflix (
-    show_id VARCHAR(10),            -- Unique identifier for each show
-    type VARCHAR(10),               -- Content type: Movie or TV Show
-    title VARCHAR(150),             -- Title of the content
-    director VARCHAR(250),          -- Name(s) of the director(s)
-    casts VARCHAR(1000),            -- Cast members, comma-separated
-    country VARCHAR(150),           -- Country of origin or distribution
-    date_added VARCHAR(50),         -- Date when content was added to Netflix
-    release_year INT,               -- Year of release
-    rating VARCHAR(30),             -- Maturity rating (e.g., PG-13, TV-MA)
-    duration VARCHAR(30),           -- Duration: runtime for movies, seasons for TV shows
-    listed_in VARCHAR(100),         -- Genres/categories of the content
-    description VARCHAR(300)        -- Short description of the content
-);
+
+                DROP TABLE IF EXISTS netflix;
+		CREATE TABLE netflix (
+		    show_id VARCHAR(10),            -- Unique identifier for each show
+		    type VARCHAR(10),               -- Content type: Movie or TV Show
+		    title VARCHAR(150),             -- Title of the content
+		    director VARCHAR(250),          -- Name(s) of the director(s)
+		    casts VARCHAR(1000),            -- Cast members, comma-separated
+		    country VARCHAR(150),           -- Country of origin or distribution
+		    date_added VARCHAR(50),         -- Date when content was added to Netflix
+		    release_year INT,               -- Year of release
+		    rating VARCHAR(30),             -- Maturity rating (e.g., PG-13, TV-MA)
+		    duration VARCHAR(30),           -- Duration: runtime for movies, seasons for TV shows
+		    listed_in VARCHAR(100),         -- Genres/categories of the content
+		    description VARCHAR(300)        -- Short description of the content
+		);
 
 **Explanation of Columns:**
-
-
         1.	show_id: Unique identifier for each show or movie.
 	2.	type: Specifies whether the content is a Movie or TV Show.
 	3.	title: Title/name of the content.
