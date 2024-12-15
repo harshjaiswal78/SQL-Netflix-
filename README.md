@@ -63,19 +63,6 @@ Dataset Link:
 		    description VARCHAR(300)        -- Short description of the content
 		);
 
-**Explanation of Columns:**
-        1.	show_id: Unique identifier for each show or movie.
-	2.	type: Specifies whether the content is a Movie or TV Show.
-	3.	title: Title/name of the content.
-	4.	director: List of directors; multiple names are comma-separated.
-	5.	casts: List of cast members; multiple names are comma-separated.
-	6.	country: The country where the content was produced or distributed.
-	7.	date_added: The date when the content was added to Netflix, stored as a string.
-	8.	release_year: The year the content was released.
-	9.	rating: The maturity rating (e.g., PG, TV-MA, R).
-	10.	duration: The duration of the content (e.g., ‘90 min’ for movies, ‘2 Seasons’ for TV shows).
-	11.	listed_in: Categories or genres (e.g., Drama, Comedy) associated with the content.
-	12.	description: A brief description or summary of the content.
 
 
 
