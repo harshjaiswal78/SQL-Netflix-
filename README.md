@@ -1,4 +1,4 @@
-**# SQL-Netflix-Analysis**
+**SQL-Netflix-Analysis**
 📊 Netflix Movies &amp; TV Shows Analysis A comprehensive analysis of Netflix’s content using SQL to uncover trends, insights, and solutions. Key focus areas include content distribution, popular genres, ratings, and regional patterns. The project addresses business questions to guide content strategy and audience engagement. 🚀
 
 
@@ -42,26 +42,6 @@ The data for this project is sourced from the Kaggle Netflix Movies and TV Shows
 Dataset Link:
 
 [Movies Dataset on Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
-
-**Schema**
-
-
-
-                DROP TABLE IF EXISTS netflix;
-		CREATE TABLE netflix (
-		    show_id VARCHAR(10),            -- Unique identifier for each show
-		    type VARCHAR(10),               -- Content type: Movie or TV Show
-		    title VARCHAR(150),             -- Title of the content
-		    director VARCHAR(250),          -- Name(s) of the director(s)
-		    casts VARCHAR(1000),            -- Cast members, comma-separated
-		    country VARCHAR(150),           -- Country of origin or distribution
-		    date_added VARCHAR(50),         -- Date when content was added to Netflix
-		    release_year INT,               -- Year of release
-		    rating VARCHAR(30),             -- Maturity rating (e.g., PG-13, TV-MA)
-		    duration VARCHAR(30),           -- Duration: runtime for movies, seasons for TV shows
-		    listed_in VARCHAR(100),         -- Genres/categories of the content
-		    description VARCHAR(300)        -- Short description of the content
-		);
 
 
 
