@@ -43,3 +43,70 @@ Dataset Link:
 
 [Movies Dataset on Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
 
+**Schema**
+
+-- Drop table if it already exists
+DROP TABLE IF EXISTS netflix;
+
+-- Create table schema for Netflix Dataset
+CREATE TABLE netflix (
+    show_id VARCHAR(10),            -- Unique identifier for each show
+    type VARCHAR(10),               -- Content type: Movie or TV Show
+    title VARCHAR(150),             -- Title of the content
+    director VARCHAR(250),          -- Name(s) of the director(s)
+    casts VARCHAR(1000),            -- Cast members, comma-separated
+    country VARCHAR(150),           -- Country of origin or distribution
+    date_added VARCHAR(50),         -- Date when content was added to Netflix
+    release_year INT,               -- Year of release
+    rating VARCHAR(30),             -- Maturity rating (e.g., PG-13, TV-MA)
+    duration VARCHAR(30),           -- Duration: runtime for movies, seasons for TV shows
+    listed_in VARCHAR(100),         -- Genres/categories of the content
+    description VARCHAR(300)        -- Short description of the content
+);
+
+**Explanation of Columns:**
+
+
+        1.	show_id: Unique identifier for each show or movie.
+	2.	type: Specifies whether the content is a Movie or TV Show.
+	3.	title: Title/name of the content.
+	4.	director: List of directors; multiple names are comma-separated.
+	5.	casts: List of cast members; multiple names are comma-separated.
+	6.	country: The country where the content was produced or distributed.
+	7.	date_added: The date when the content was added to Netflix, stored as a string.
+	8.	release_year: The year the content was released.
+	9.	rating: The maturity rating (e.g., PG, TV-MA, R).
+	10.	duration: The duration of the content (e.g., ‘90 min’ for movies, ‘2 Seasons’ for TV shows).
+	11.	listed_in: Categories or genres (e.g., Drama, Comedy) associated with the content.
+	12.	description: A brief description or summary of the content.
+
+
+
+**🔍 Findings and Conclusions**
+
+**1. Content Distribution**
+	•	Netflix’s catalog features a diverse mix of Movies and TV Shows, with Movies dominating the content library.
+	•	Content spans multiple genres, durations, and ratings, catering to a wide range of audience preferences.
+
+**2. Common Ratings**
+	•	Ratings like TV-MA (Mature Audience) and PG-13 are the most prevalent, indicating a strong focus on content tailored to older teens and adult viewers.
+	•	Understanding these ratings provides valuable insights into Netflix’s target audience demographics.
+
+**3. Geographical Insights**
+	•	The United States and India lead as top contributors to Netflix’s content library.
+	•	Regional analysis highlights content localization opportunities to further engage global markets.
+	•	The average content release trends in India and France underscore Netflix’s focus on high-growth regions.
+
+**4. Content Categorization**
+	•	Categorizing content based on specific keywords (e.g., violence, documentaries) reveals patterns in content themes, helping to identify user engagement opportunities.
+	•	Genres like Documentaries, Dramas, and Comedies are highly represented, reflecting user demand for these categories.
+
+**🎯 Conclusion**
+
+This analysis offers a comprehensive understanding of Netflix’s content strategy, including distribution trends, audience targeting, and regional strengths. The findings can help Netflix:
+	1.	Optimize Content Acquisition: Focus on top-performing genres and ratings.
+	2.	Enhance Audience Engagement: Personalize recommendations based on content patterns.
+	3.	Expand Regional Influence: Localize and prioritize content for high-demand markets like India and the USA.
+	4.	Refine Content Themes: Identify opportunities to diversify content based on emerging audience interests.
+
+By leveraging these insights, Netflix can continue to grow its subscriber base, improve content curation, and strengthen its competitive edge in the streaming market. 🚀
