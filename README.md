@@ -1,4 +1,13 @@
+
+
+![logo](https://github.com/user-attachments/assets/e5fe415a-e4f9-4a31-8cf7-9f485dc2b327)
+
+
+
+
+
 **SQL-Netflix-Analysis**
+
 
 
 📊 Netflix Movies &amp; TV Shows Analysis A comprehensive analysis of Netflix’s content using SQL to uncover trends, insights, and solutions. Key focus areas include content distribution, popular genres, ratings, and regional patterns. The project addresses business questions to guide content strategy and audience engagement. 🚀
